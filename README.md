@@ -1,4 +1,4 @@
-## Path Ranking with Attention to Type Hierarchies (Review only)
+## Path Ranking with Attention to Type Hierarchies
 This repo contains code for training and testing the proposed models in *Path Ranking with Attention to Type Hierarchies*.
 Due to its large size, data needs to be downloaded separately from [dropbox](https://www.dropbox.com/s/0a4o2jljg4imuux/data.zip?dl=0).
 
