@@ -34,3 +34,14 @@ FB15k-237 entities can be found [here](https://github.com/thunlp/TKRL).
 3. Use `main/playground/model2/CompositionalVectorSpaceModel.py` to modify the network design. Different attention methods for
 types and paths can be selected here.
 4. Training progress can be monitored using tensorboardX by running `tensorboard --logdir runs`. Tutorials and Details can be found [here](https://github.com/lanpa/tensorboardX).
+
+## Citation
+Please cite the following work if you find the data/code useful.
+```text
+@inproceedings{liu2019path,
+  title = {Path Ranking with Attention to Type Hierarchies},
+  author = {Weiyu Liu and Daruna, Angel and Kira, Zsolt and Chernova, Sonia},
+  booktitle = {Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI)},
+  year = {2020}
+}
+```
