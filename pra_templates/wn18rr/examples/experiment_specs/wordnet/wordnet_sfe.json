@@ -1,0 +1,20 @@
+load test_experiment_base
+{
+  "operation": {
+    "features": {
+      "type": "subgraphs",
+      "path finder": {
+        "type": "BfsPathFinder",
+        "number of steps": 3
+      },
+      "feature extractors": [
+        "PraFeatureExtractor"
+      ],
+      "feature size": -1
+    },
+    "learning": {
+      "l1 weight": 0.005,
+      "l2 weight": 0.01
+    }
+  }
+}

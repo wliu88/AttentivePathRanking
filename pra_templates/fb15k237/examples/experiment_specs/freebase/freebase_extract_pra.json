@@ -1,0 +1,26 @@
+load extract_experiment_base
+{
+  "operation": {
+    "type": "create matrices",
+    "features": {
+      "type": "pra",
+      "path finder": {
+        "type": "RandomWalkPathFinder",
+        "walks per source": 20,
+        "path finding iterations": 2,
+        "path accept policy": "paired-only"
+      },
+      "path selector": {
+        "number of paths to keep": 100
+      },
+      "path follower": {
+        "walks per path": 50,
+        "matrix accept policy": "paired-targets-only"
+      },
+    },
+    "data": "both"
+   },
+   "output": {
+      "output matrices": true,
+   }
+}

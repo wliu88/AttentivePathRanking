@@ -1,0 +1,23 @@
+load extract_experiment_base
+{
+  "operation": {
+    "type": "create matrices",
+    "features": {
+      "type": "subgraphs",
+      "path finder": {
+        "type": "BfsPathFinder",
+        "number of steps": 3,
+	"path type factory": "LexicalizedPathTypeFactory",
+      },
+      "feature extractors": [{
+        "name": "PraFeatureExtractor",
+        "include nodes": true,
+      }],
+      "feature size": -1
+    },
+    "data": "both"
+  },
+  "output": {
+    "output matrices": true
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "graph": {
+    "name": "freebase",
+    "relation sets": [
+      {
+        "is kb": false,
+        "relation file": "examples/relation_metadata/freebase/labeled_edges.tsv"
+      },
+    ],
+    "shard plain text graph": true,
+    "output plain text file": true,
+  },
+  "split": {
+    "name": "split",
+    "relation metadata": "freebase",
+    "graph": "freebase",
+    "percent training":0.8,
+    "relations":["|award|award_category|nominees.|award|award_nomination|nominated_for",
+		 "|award|award_winning_work|awards_won.|award|award_honor|award",
+		 "|music|record_label|artist",
+		 "|film|film|production_companies",
+		 "|film|film|genre",
+		 "|education|educational_institution|students_graduates.|education|education|major_field_of_study",
+		 "|people|person|profession",
+		 "|tv|tv_program|regular_cast.|tv|regular_tv_appearance|actor",
+		 "|sports|sports_position|players.|sports|sports_team_roster|team",
+		 "|food|food|nutrients.|food|nutrition_fact|nutrient"],
+    "negative instances": {
+      "negative to positive ratio": 10
+    }
+  },
+  "operation": {
+    "type": "no op"
+  }
+}

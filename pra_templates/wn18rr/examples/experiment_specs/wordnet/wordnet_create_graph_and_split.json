@@ -1,0 +1,26 @@
+{
+  "graph": {
+    "name": "wordnet",
+    "relation sets": [
+      {
+        "is kb": false,
+        "relation file": "examples/relation_metadata/wordnet/labeled_edges.tsv"
+      },
+    ],
+    "shard plain text graph": true,
+    "output plain text file": true,
+  },
+  "split": {
+    "name": "split",
+    "relation metadata": "wordnet",
+    "graph": "wordnet",
+    "percent training":0.8,
+    "relations":["has_part", "hypernym", "synset_domain_topic_of", "derivationally_related_form", "member_of_domain_region", "also_see", "similar_to", "verb_group", "member_of_domain_usage","instance_hypernym", "member_meronym"],
+    "negative instances": {
+      "negative to positive ratio": 10
+    }
+  },
+  "operation": {
+    "type": "no op"
+  }
+}
