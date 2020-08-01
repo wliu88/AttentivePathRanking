@@ -1,6 +1,7 @@
 ## Path Ranking with Attention to Type Hierarchies
-This repo contains code for AAAI 2020 paper *Path Ranking with Attention to Type Hierarchies*.
-<img src="figure/figure1.png" alt="drawing" width="200"/>
+This repo contains code for AAAI 2020 paper ***Path Ranking with Attention to Type Hierarchies***, in which we introduce ***Attentive Path Ranking (APR)***, a novel path pattern representation that leverages type hierarchies of entities to both avoid ambiguity and maintain generalization. 
+
+<img src="figure/figure1.png" alt="drawing" width="600"/>
 
 ## Resources
 1. Code for baseline models in the paper can be found [here](https://github.com/matt-gardner/pra) (PRA and SFE) and 
