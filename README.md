@@ -44,7 +44,7 @@ extract paths, vectorize path data, run baselines, and run APR model.
 
 ### Data
 1. Raw data, including relation data, type information, and word embeddings, for WN18RR, FB15k-237 can be downloaded
-from [dropbox]().
+from [dropbox](https://www.dropbox.com/s/vqq2jfo9xi3gwnz/APR_raw_data.zip?dl=0).
 2. Unzip the file in the root directory of this repo.
 
 ### Install Dependencies
