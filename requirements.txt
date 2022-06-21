@@ -1,4 +1,4 @@
-numpy==1.16.2
+numpy==1.22.0
 Pillow==6.0.0
 protobuf==3.7.1
 six==1.12.0
